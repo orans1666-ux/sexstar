@@ -1,0 +1,3 @@
+/* Dark mode is activated with data-theme="dark" on the html element. */
+[data-theme="dark"] .card,[data-theme="dark"] .form-card,[data-theme="dark"] .table-card,[data-theme="dark"] .stat-card{background:#12110f}
+[data-theme="dark"] .btn.secondary{color:#f7efdf}

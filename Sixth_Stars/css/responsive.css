@@ -1,0 +1,234 @@
+@media (max-width: 1240px) {
+  .quick-link,
+  .login-link {
+    display: none;
+  }
+}
+
+@media (max-width: 1120px) {
+  .nav-wrap {
+    gap: 12px;
+  }
+
+  .primary-nav {
+    gap: 4px;
+  }
+
+  .nav-links a {
+    padding-inline: 9px;
+    font-size: 13px;
+  }
+
+  .lang-switch {
+    min-width: 84px;
+  }
+
+  .grid-4,
+  .grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-grid,
+  .split-grid,
+  .feature-split,
+  .booking-shell,
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-box {
+    position: static;
+  }
+}
+
+@media (max-width: 920px) {
+  .nav-wrap {
+    grid-template-columns: auto 1fr auto;
+    min-height: 76px;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    inset: calc(100% + 10px) 0 auto 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding: 16px;
+    border: 1px solid rgba(242, 208, 122, 0.28);
+    border-radius: var(--radius);
+    background: linear-gradient(180deg, rgba(18, 17, 15, 0.99), rgba(8, 8, 7, 0.99));
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(18px);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    justify-content: flex-start;
+    min-height: 46px;
+    padding-inline: 14px;
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.045);
+  }
+
+  [dir="rtl"] .nav-links a {
+    justify-content: flex-end;
+  }
+
+  .desktop-book {
+    display: none;
+  }
+
+  .mobile-book {
+    display: inline-flex;
+    margin-top: 4px;
+    background: linear-gradient(135deg, var(--gold-2), var(--gold)) !important;
+    color: #17110a !important;
+  }
+
+  .grid-2,
+  .footer-grid,
+  .gallery-grid,
+  .page-grid,
+  .auth-shell,
+  .promo-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 72px 0 58px;
+  }
+
+  .admin-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-sidebar {
+    position: static;
+    height: auto;
+  }
+
+  .admin-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .kpi-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: min(100% - 22px, 1200px);
+  }
+
+  .brand-copy small {
+    display: none;
+  }
+
+  .brand-copy strong {
+    max-width: 110px;
+    overflow: hidden;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .brand-mark {
+    width: 48px;
+    height: 48px;
+    border-radius: 15px;
+  }
+
+  .brand-mark img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .header-actions {
+    gap: 6px;
+  }
+
+  .lang-switch {
+    min-width: 92px;
+    padding-inline: 10px;
+    font-size: 12px;
+  }
+
+  .theme-switch,
+  .menu-toggle {
+    min-width: 42px;
+    width: 42px;
+    font-size: 12px;
+  }
+
+  .grid-4,
+  .grid-3,
+  .kpi-grid,
+  .form-row,
+  .form-grid,
+  .option-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-badges,
+  .contact-strip,
+  .quick-actions,
+  .form-actions,
+  .filter-row {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .btn,
+  .quick-actions a {
+    width: 100%;
+  }
+
+  .section {
+    padding: 52px 0;
+  }
+
+  .ad-card {
+    min-height: 340px;
+  }
+
+  .service-card img,
+  .gallery-item img,
+  .media-frame img {
+    height: 185px;
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 720px;
+  }
+
+  .float-actions {
+    right: 12px;
+    bottom: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-copy {
+    display: none;
+  }
+
+  .lang-switch {
+    min-width: 86px;
+    max-width: 86px;
+    overflow: hidden;
+  }
+}

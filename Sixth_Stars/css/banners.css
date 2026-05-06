@@ -1,0 +1,122 @@
+.banner-rail {
+  display: grid;
+  gap: 20px;
+}
+
+.promo-banner {
+  position: relative;
+  overflow: hidden;
+  min-height: 280px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
+  gap: 24px;
+  align-items: center;
+  padding: 34px;
+  border: 1px solid rgba(242, 208, 122, 0.25);
+  border-radius: var(--radius);
+  background:
+    radial-gradient(circle at 18% 25%, rgba(242, 208, 122, 0.16), transparent 18rem),
+    linear-gradient(135deg, #080807, #1b160d 64%, #080807);
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.promo-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.045), transparent),
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.035) 0 9px, transparent 9px 22px);
+  pointer-events: none;
+}
+
+.promo-banner > * {
+  position: relative;
+  z-index: 1;
+}
+
+.promo-banner h2,
+.promo-banner h3 {
+  color: var(--gold-2);
+}
+
+.promo-banner p {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.promo-banner img {
+  width: 100%;
+  min-height: 190px;
+  object-fit: cover;
+  border: 1px solid rgba(242, 208, 122, 0.26);
+  border-radius: var(--radius);
+}
+
+.banner-media {
+  min-height: 198px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(242, 208, 122, 0.28);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--gold-2);
+  font-family: "Montserrat", "Cairo", sans-serif;
+  font-size: clamp(36px, 7vw, 76px);
+  font-weight: 900;
+  text-align: center;
+}
+
+.banner-slider {
+  position: relative;
+}
+
+.banner-slide {
+  display: none;
+}
+
+.banner-slide.active {
+  display: grid;
+}
+
+.banner-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.banner-dot {
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--line);
+  cursor: pointer;
+}
+
+.banner-dot.active {
+  background: var(--gold);
+}
+
+.offer-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.offer-card::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: -38px;
+  top: -38px;
+  width: 118px;
+  height: 118px;
+  border: 1px solid rgba(201, 155, 59, 0.22);
+  border-radius: 50%;
+  background: rgba(201, 155, 59, 0.08);
+}
+
+.offer-card strong {
+  color: var(--gold);
+  font-size: 28px;
+}

@@ -1,0 +1,252 @@
+.page-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 72px 0 54px;
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 84% 0, rgba(201, 155, 59, 0.15), transparent 24rem),
+    linear-gradient(135deg, var(--surface), var(--paper));
+}
+
+.page-hero::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.page-hero h1 {
+  color: var(--ink);
+  font-size: clamp(38px, 5vw, 68px);
+}
+
+.page-hero p {
+  max-width: 760px;
+}
+
+.page-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 26px;
+  align-items: start;
+}
+
+.auth-shell {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.86fr) minmax(0, 1.14fr);
+  gap: 26px;
+  align-items: stretch;
+  min-height: 100vh;
+  padding: 62px 0;
+}
+
+.auth-panel {
+  display: grid;
+  align-content: end;
+  min-height: 520px;
+  padding: 34px;
+  border: 1px solid rgba(242, 208, 122, 0.24);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(145deg, rgba(8, 8, 7, 0.94), rgba(42, 31, 8, 0.9)),
+    url("../assets/images/hero/hero-lounge.svg") center/cover no-repeat;
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.auth-panel p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.form-card label,
+.form-grid label,
+.input-group label {
+  display: grid;
+  gap: 7px;
+  margin-bottom: 14px;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 11px 13px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--ink);
+  outline: none;
+}
+
+textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 4px rgba(201, 155, 59, 0.12);
+}
+
+.form-row,
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.form-actions,
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.booking-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) 370px;
+  gap: 24px;
+  align-items: start;
+}
+
+.step {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--soft-shadow);
+}
+
+.step + .step {
+  margin-top: 16px;
+}
+
+.option-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.option-card {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.option-card.selected {
+  border-color: var(--gold);
+  background: rgba(201, 155, 59, 0.1);
+}
+
+.summary-box {
+  position: sticky;
+  top: 104px;
+  padding: 24px;
+  border: 1px solid rgba(201, 155, 59, 0.34);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.profile-card {
+  display: grid;
+  gap: 12px;
+  padding: 28px;
+}
+
+.avatar {
+  display: grid;
+  width: 84px;
+  height: 84px;
+  place-items: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold-2), var(--gold));
+  color: #14100b;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.table-wrap {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--soft-shadow);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 14px;
+  border-bottom: 1px solid var(--line);
+  text-align: start;
+}
+
+th {
+  background: var(--surface-2);
+  color: var(--ink);
+  font-weight: 900;
+}
+
+.success-mark,
+.failed-mark {
+  display: grid;
+  width: 96px;
+  height: 96px;
+  place-items: center;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 44px;
+  font-weight: 900;
+}
+
+.success-mark {
+  background: var(--success);
+}
+
+.failed-mark {
+  background: var(--danger);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--soft-shadow);
+}
+
+.gallery-item div {
+  padding: 14px;
+  font-weight: 900;
+}

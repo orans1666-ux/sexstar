@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Luxury barbershop hero">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1"><stop stop-color="#080808"/><stop offset=".58" stop-color="#1b1710"/><stop offset="1" stop-color="#3a2a09"/></linearGradient>
+    <linearGradient id="gold" x1="0" x2="1"><stop stop-color="#f5d680"/><stop offset="1" stop-color="#c79a3b"/></linearGradient>
+    <pattern id="p" width="44" height="44" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="10" height="44" fill="rgba(255,255,255,.06)"/></pattern>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#p)"/>
+  <circle cx="1230" cy="320" r="230" fill="#f5d680" opacity=".08"/>
+  <rect x="970" y="250" width="380" height="360" rx="28" fill="#111" stroke="#c79a3b" stroke-width="5"/>
+  <rect x="1015" y="295" width="290" height="42" rx="21" fill="url(#gold)"/>
+  <path d="M1080 430h160M1080 480h220M1080 530h130" stroke="#f5d680" stroke-width="14" stroke-linecap="round"/>
+  <rect x="1190" y="600" width="300" height="80" rx="40" fill="#090909" stroke="#f5d680" stroke-width="4"/>
+  <text x="1325" y="654" text-anchor="middle" font-family="Montserrat,Arial" font-size="28" font-weight="800" fill="#f5d680">SIXTH STAR</text>
+</svg>
